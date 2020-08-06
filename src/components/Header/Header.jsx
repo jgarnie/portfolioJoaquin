@@ -25,13 +25,11 @@ export default function Header() {
                         1000,
                         'Curious',
                         1000,
-                        'Easygoing',
-                        1000,
                         'Team player',
                         1000,
                         'Animal lover',
                         1000,
-                        'Lets make things that matter!',
+                        'Lets develop together!',
                         10000,
                     ]}
                />
