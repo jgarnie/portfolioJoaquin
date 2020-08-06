@@ -1,0 +1,30 @@
+@import '../../variables.scss';
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $grey-light;
+    justify-content: space-evenly;
+    padding-bottom: 4rem;
+    &__heading{
+        width: 100%;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+    &__line{
+        height: 0.5rem;
+        background-color: $green;
+        width: 10%;
+        margin: 1.5rem 1rem;
+    }
+    a{
+        text-decoration: none;
+        color: $black;
+    }
+    p{
+
+        width: 100%;
+        text-align: center;
+    }
+}

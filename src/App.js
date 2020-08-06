@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navigation from './components/Navigation/Navigation.jsx';
+import Header from './components/Header/Header.jsx';
+import Process from './components/Process/Porcess.jsx';
+import MySkills from './components/MySkills/MySkills.jsx';
+import MyPortfolio from './components/MyPortfolio/MyPortfolio.jsx'
+import AboutMe from './components/AboutMe/AboutMe.jsx';
+import "./App.scss";
+import FindMe from './components/FindMe/FindMe.jsx';
+import ContactMe from './components/ContactMe/ContactMe.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+      <Navigation />
+      <Header />
+      <Process />
+      <MySkills />
+      <MyPortfolio />
+      <AboutMe />
+      <ContactMe />
+      <FindMe />
+      
+      
+    </>
   );
 }
 
