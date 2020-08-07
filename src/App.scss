@@ -37,3 +37,16 @@ html, body {
 		}
 	}
 }
+*::-webkit-scrollbar {
+	width: 20px;
+  }
+  *::-webkit-scrollbar-track {
+	background: $grey-light;
+  }
+  *::-webkit-scrollbar-thumb {
+	background-color: $green;
+	border-radius: 20px;
+	border: 1px solid $grey-text;
+  }
+  
+  
