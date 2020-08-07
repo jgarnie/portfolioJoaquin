@@ -18,19 +18,14 @@ export default function Header() {
            <span> 
 
                <Typical 
-                loop={Infinity}
+                loop={1}
                 wrapper="b"
                 steps={[
-                        'I\'m a developer',
+                        'let Joaquin  =  developer;',
                         1000,
-                        'Curious',
-                        1000,
-                        'Team player',
-                        1000,
-                        'Animal lover',
-                        1000,
-                        'Lets develop together!',
-                        10000,
+                        '{ Let\'s make things together! }',
+                        0,
+                    
                     ]}
                />
                

@@ -2,11 +2,15 @@ import React, { useState, useEffect} from 'react';
 import "./navigation.scss";
 import NavigationLink from "./NavigationLink.jsx";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Switch from '../Switch/Switch';
 
-export default function Navigation() {
+
+
+export default function Navigation({modes}) {
     const [ isActive, setisActive] = useState(null);
     const [ menu, setMenu]= useState(true);
     const [refresh, setRefresh]= useState(0)
+    const [mode, setMode] = useState(true);
 
     let links = [
         { text: 'Home', url:'#root' },
@@ -27,6 +31,13 @@ export default function Navigation() {
         menu ? setMenu(false) : setMenu(true);
         console.log(menu)
     }
+    const handleMode=(mode)=>{
+        setMode(mode)
+    }
+    useEffect(() => {
+        modes(mode);
+       }, [ mode ]);
+
     useEffect(() => {
        setMenu(true);
       }, [ refresh ]);
@@ -37,7 +48,11 @@ export default function Navigation() {
                     <div>J</div>
                     <div>G</div>
                     <div>N</div>
+                    
                 </div>
+                    <div className="nav__switch">
+                        <Switch handleMode={handleMode}/>
+                    </div>  
                 
                     <div className="nav__container">
                         

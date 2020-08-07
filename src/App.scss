@@ -7,3 +7,33 @@ html, body {
 	padding: 0;
 	scroll-behavior: smooth;
 }
+.app{
+	
+	.skills{
+		background-color: $grey-text;
+	}
+	.about{
+		background-color: $grey-text;
+		color: $white;
+		&__img{
+			box-shadow: $box-shadow-light;
+		}
+	}
+	.process{
+		background-color: $grey-text;
+		color: $white;
+		&__circle{
+			background-color:$grey-text;
+		}
+	}
+	.footer{
+		background-color: $grey-text;
+		color: $white;
+	}
+	.contact{
+		.form__text{
+			background-color: $grey-text;
+			color: $white;
+		}
+	}
+}

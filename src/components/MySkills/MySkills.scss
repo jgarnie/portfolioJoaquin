@@ -2,7 +2,7 @@
 
 .skills {
 	padding: 2rem 5% 4rem 5%;
-
+	background-color: $grey-light;
 	@media (min-width: 800px) {
 		padding: 4rem 15% 8rem 15%;
 	}
@@ -30,18 +30,23 @@
 		background-color: $grey-dark;
 		text-align: center;
 		padding: 0.5rem;
+		height: 1.5rem;
 
 		@media (min-width: 800px) {
 			padding: 0.75rem;
 		}
+		
 	}
-
+	&__react{
+		animation: rotation 8s infinite linear;
+	}
 	&__progress-bar {
 		width: 75%;
 		background-color: $grey-light;
 		padding: 0.5rem;
 		text-align: right;
 		position: relative;
+
 
 		@media (min-width: 800px) {
 			padding: 0.75rem;
@@ -51,26 +56,32 @@
 	&__progress {
 		background-color: $green;
 		height: 100%;
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  z-index: 0;
-	  transition: width 2s;
+	  	position: absolute;
+	  	top: 0;
+	  	left: 0;
+	  	z-index: 0;
+	  	transition: width 2s;
 
-	  &--50 {
-	  	width: 50%;
-	  }
-	  &--60 {
-	  	width: 60%;
-	  }
+		&--50 {
+			width: 50%;
+			text-align: center;
+			
+		}
+		&--60 {
+			width: 60%;
+			text-align: center;
+		}
 
-	  &--70 {
-	  	width: 70%;
-	  }
+		&--70 {
+			width: 70%;
+			text-align: center;
+		}
 
-	  &--80 {
-	  	width: 80%;
-	  }
+		&--80 {
+			width: 80%;
+			text-align: center;
+			
+		}
 	}
 
 	&__percentage {
@@ -83,3 +94,11 @@
 		}
 	}
 }
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }

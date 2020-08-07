@@ -60,7 +60,7 @@ export default function ContactMe() {
             <input type="email" onChange={handleEmail} name="email" value={email} className="form__input" placeholder="Email*"/>
             
             <label className="form__label">Message*</label>
-            <textarea onChange={handleText} name="text" value={text} className="form__text" placeholder="Message*"></textarea>
+            <textarea onChange={handleText} name="text" value={text} className="form__text"></textarea>
             <button type="submir" className="form__submit">Send</button>
         </form>
 

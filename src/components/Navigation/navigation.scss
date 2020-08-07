@@ -11,7 +11,7 @@
     font-weight: 700;
     font-family: $base-font;
     z-index: 4;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 700px) {
         background-color: $grey-dark;
         margin-bottom: 1rem;
         padding-bottom: 0.5rem;
@@ -31,33 +31,47 @@
             background-color: transparent;
             width: 50%;
         }
+       
         :nth-child(1){
             position: relative;
             top: 0.3em;
             color: red;
-            padding-left: 5rem;
+            padding-left: 1rem;
             transform: rotate(-15deg);
             @media only screen and (max-width: 600px) {
             
                 padding-left: 2.5rem;
                 bottom: 0.3;
             }
+            @media (max-width: 300px) {
+                display: none;
+                
+            }
         }
         :nth-child(2){
             position: relative;
             transform: rotate(20deg);
             color: green;
+            @media (max-width: 300px) {
+                display: none;
+                
+            }
         }
+
         :nth-child(3){
             position: relative;
             bottom: 0.2rem;
             transform: rotate(-200deg);
             padding-left: 0.5rem;
             color: blue;
+            @media (max-width: 300px) {
+                display: none;
+                
+            }
         }
      
     }
-
+    
     &__container{
         width: 70%;
         display: flex;
@@ -149,5 +163,52 @@
           
         }
     }
-    
+    &__switch{
+        background-color: $grey-dark;
+    }
+    .switch{
+       
+        border-radius: 10rem;
+        margin-top: 0.5rem;
+        height: 4vh;
+        min-width: 9vh;
+        border: 1px solid $black;
+        background-color: $grey-text;
+        @media (max-width: 600px) {
+            position: relative;
+            right:  4.5rem;
+            
+        }
+        @media (max-width: 300px) {
+            position: relative;
+            right:  9rem;
+            
+        }
+        
+        
+        &__ball{
+            width: 2rem;
+            height: 2rem;
+            background-color: $green;
+            border-radius: 50%;
+            transition: 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $black;
+            @media (max-width: 600px) {
+                width: 50%;
+                height: 99%;
+            }
+             &--dark{
+                transform: translate(2.7rem, 0rem);
+                background-color: $green;
+                @media (max-width: 600px) {
+                   transform: translate(2.2rem,0rem);
+                }
+            }
+        }
+       
+      
+    }
 }
