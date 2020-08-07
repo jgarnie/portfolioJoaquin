@@ -8,6 +8,7 @@ import AboutMe from './components/AboutMe/AboutMe.jsx';
 import "./App.scss";
 import FindMe from './components/FindMe/FindMe.jsx';
 import ContactMe from './components/ContactMe/ContactMe.jsx';
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -23,19 +24,32 @@ const handleChange=(mode)=>{
 
   return (
     <>
+    
     <div className={change?"":"app"}>
 
     
       <Navigation modes={handleChange}/>
       <Header />
-      <Process />
-      <MySkills />
-      <MyPortfolio />
-      <AboutMe />
-      <ContactMe />
-      <FindMe />
-    
+      <Fade up>
+        <Process />
+      </Fade>
+      <Fade right>
+        <MySkills />
+      </Fade>
+      <Fade>
+        <MyPortfolio />
+      </Fade>
+      <Fade left>
+        <AboutMe />
+      </Fade>
+      <Fade right>
+        <ContactMe />
+      </Fade>
+      <Fade up>
+        <FindMe />
+      </Fade>
     </div>
+    
     </>
   );
 }
