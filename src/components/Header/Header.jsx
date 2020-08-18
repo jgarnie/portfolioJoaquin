@@ -21,10 +21,12 @@ export default function Header() {
                 loop={1}
                 wrapper="b"
                 steps={[
+                        '',
+                        3000,
                         'let Joaquin  =  developer;',
                         1000,
                         '{ Let\'s make things together! }',
-                        0,
+                        1000,
                     
                     ]}
                />

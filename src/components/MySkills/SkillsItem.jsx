@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Fade from 'react-reveal/Fade';
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiSass } from "react-icons/di";
 import { DiCss3 } from "react-icons/di";
@@ -13,15 +13,16 @@ import { FaReact } from "react-icons/fa";
 export default function SkillsItem() {
     return (
         <>
-		
+		<Fade right>
 				<div className="skills__item">
-	<div className="skills__label"><AiFillHtml5 /> </div>
+					<div className="skills__label"><AiFillHtml5 /> </div>
 					<div className="skills__progress-bar">
 						<div className="skills__progress skills__progress--80">HTML5</div>
 						<div className="skills__percentage">80%</div>
 					</div>
 				</div>
-
+		</Fade>
+		<Fade left>
 				<div className="skills__item">
 					<div className="skills__label"><DiCss3 />  <DiSass /></div>
 					<div className="skills__progress-bar">
@@ -30,6 +31,8 @@ export default function SkillsItem() {
 					</div>
 				</div>
 
+				</Fade>
+				<Fade right>
 				<div className="skills__item">
 					<div className="skills__label"><FaLaravel /></div>
 					<div className="skills__progress-bar">
@@ -37,7 +40,8 @@ export default function SkillsItem() {
 						<div className="skills__percentage">70%</div>
 					</div>
 				</div>
-
+				</Fade>
+				<Fade left>
                 <div className="skills__item">
 					<div className="skills__label"><FaReact className="skills__react"/></div>
 					<div className="skills__progress-bar">
@@ -45,7 +49,8 @@ export default function SkillsItem() {
 						<div className="skills__percentage">70%</div>
 					</div>
 				</div>
-
+				</Fade>
+				<Fade right>
 				<div className="skills__item">
 					<div className="skills__label"><DiJavascript1 /></div>
 					<div className="skills__progress-bar">
@@ -53,7 +58,8 @@ export default function SkillsItem() {
 						<div className="skills__percentage">60%</div>
 					</div>
 				</div>
-
+				</Fade>
+				<Fade left>
 				<div className="skills__item">
 					<div className="skills__label"><DiPhp size={36}/></div>
 					<div className="skills__progress-bar">
@@ -61,7 +67,8 @@ export default function SkillsItem() {
 						<div className="skills__percentage">60%</div>
 					</div>
 				</div>
-
+				</Fade>
+				<Fade right>
 				<div className="skills__item">
 					<div className="skills__label">UX</div>
 					<div className="skills__progress-bar">
@@ -69,6 +76,7 @@ export default function SkillsItem() {
 						<div className="skills__percentage">50%</div>
 					</div>
 				</div>
+				</Fade>
 			</>
     )
 }

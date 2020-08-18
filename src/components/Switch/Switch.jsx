@@ -1,5 +1,4 @@
 import React,{ useState, useEffect} from 'react';
-import './Switch.scss';
 import { WiDaySunny } from "react-icons/wi";
 import { FiMoon } from "react-icons/fi";
 

@@ -33,19 +33,19 @@ const handleChange=(mode)=>{
       <Fade up>
         <Process />
       </Fade>
-      <Fade right>
+      <Fade>
         <MySkills />
       </Fade>
-      <Fade>
+      
         <MyPortfolio />
-      </Fade>
-      <Fade left>
+      
+      <Fade>
         <AboutMe />
       </Fade>
-      <Fade right>
+      <Fade>
         <ContactMe />
       </Fade>
-      <Fade up>
+      <Fade>
         <FindMe />
       </Fade>
     </div>
