@@ -13,7 +13,7 @@ export default function Switch({handleMode}) {
     const modeChange=()=>{
 
         mode?setMode(false):setMode(true);
-        
+
     }
 
 

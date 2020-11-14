@@ -3,21 +3,15 @@ import "./Header.scss";
 import Typical from "react-typical";
 
 export default function Header() {
-
-
-
     return (
         <header>
-           
+
                 <h1>
                     Hi, <a href="#about">I'm Joaquin Garcia</a>
-                </h1> 
-           
-           
-           
-           <span> 
+                </h1>
+           <span>
 
-               <Typical 
+               <Typical
                 loop={1}
                 wrapper="b"
                 steps={[
@@ -27,12 +21,10 @@ export default function Header() {
                         1000,
                         '{ Let\'s make things together! }',
                         1000,
-                    
+
                     ]}
                />
-               
            </span>
-           
         </header>
     )
 }
